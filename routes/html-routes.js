@@ -3,15 +3,21 @@ var path = require("path");
 // =============================================================
 module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
-  // index route loads view.html
+  // index route loads index.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  app.get("/menu", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/menu.html"));
   });
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  app.get("/recipes", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/recipes.html"));
+  });
+  app.get("/form-page", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/form-page.html"));
+  });
+  // index route loads index.html
+  app.get("/index", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 };
