@@ -1,0 +1,19 @@
+{
+  "name": "chefchat",
+  "version": "1.0.0",
+  "description": "Post, edit, and discuss your favorite recipes!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChefChat/ChefChat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChefChat/ChefChat/issues"
+  },
+  "homepage": "https://github.com/ChefChat/ChefChat#readme"
+}
