@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chef Chat</title>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz:400,700" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Mobile Responsive Viewport info-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI links -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Native CSS-->  
+ <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+
+<!--Navigation Bar-->	
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1"> 
+              <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username" required>
+      </div>
+      <button type="submit" class="btn btn-default">Sign In</button>
+    </form>
+         <!-- Logo -->
+    <div class="key"><img src="public/assets/img/logo.png" style = "width:200px"></div>
+    </div>
+            
+</nav>
+
+
+<!--Jumbotron-->
+      <div class="jumbotron">
+         
+          <div class="container innerBox"> 
+<div class="border">
+        <h1 class="display-3">FIND A RECIPE</h1>
+        <form class="form-inline">
+  <label class="sr-only" for="inlineFormInput">Name</label> 
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder= "Enter Recipe Name" required >
+  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Submit</button>
+</form>
+</div>
+      </div>
+</div>   
+
+ <!--Panel row one-->  
+ <div class="container menu">   
+     <div class="panel panel-default ">
+        <div class="panel-heading header">
+            <h3 class="panel-title"><img src="public/assets/img/spoon.png" style="width:30px"> GET READY FOR THANKSGIVING</h3>
+        </div>
+<div class="panel-body">
+    <!-- Example row of columns -->
+    <section class="row text-center placeholders">
+        <div class="col-6 col-sm-4 placeholder menuItem">
+            <img src="public/assets/img/chicken.jpg" alt="food image" height="175px">
+            <h4>Lemon Pepper Chicken</h4>
+        </div>
+        <div class="col-6 col-sm-4 placeholder menuItem">
+            <img src="public/assets/img/burritos.jpg" height="175px" alt="food image">
+            <h4>Burrito Con Queso</h4>
+        </div>
+        <div class="col-6 col-sm-4 placeholder menuItem">
+            <img src="public/assets/img/stirfry.jpg" height="175px" alt="food image">
+            <h4>Southwester Stir Fry</h4>
+        </div>
+    </section>
+</div>
+</div>
+
+
+ <!--Panel row one-->  
+ <div class="container menu">   
+<div class="panel-body">
+    <!-- Example row of columns -->
+    <section class="row text-center placeholders">
+        <div class="col-6 col-sm-4 placeholder iconStyle">
+            <img src="public/assets/img/icon1.png" alt="food image" height="175px">
+            <h4>CREATE NEW RECIPE</h4>
+        </div>
+        <div class="col-6 col-sm-4 placeholder iconStyle">
+            <img src="public/assets/img/icon2.png" height="175px" alt="food image">
+            <h4>YOUR RECIPES</h4>
+        </div>
+        <div class="col-6 col-sm-4 placeholder iconStyle">
+            <img src="public/assets/img/icon3.png" height="175px" alt="food image">
+            <h4>FAVORITE RECIPES</h4>
+        </div>
+    </section>
+</div>
+</div>
+</div>
+    <footer class="footer">
+        <div class="container">
+          <div class="footerText">  <span class="text-muted "> &copy; Chef Chat, 2017</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

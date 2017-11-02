@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Card</title>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz:400,700" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Mobile Responsive Viewport info-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI links -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Native CSS-->
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-sm" placeholder="Username" required>
+                    </div>
+                    <button type="submit" class="btn btn-default">Sign In</button>
+                </form>
+                <!-- Logo -->
+                <div class="key"><img src="public/assets/img/logo.png" style="width:200px"></div>
+            </div>
+    </nav>
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <div class="container innerBox">
+            <div class="border">
+                <h1 class="display-3">FIND A RECIPE</h1>
+                <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Enter Recipe Name" required>
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ <!--Panel row one-->
+    <div class="container menu">
+        <div class="panel panel-default ">
+            <div class="panel-heading header">
+                <h3 class="panel-title"><img src="public/assets/img/spoon.png" width="30px"> RECIPES </h3>
+            </div>
+            <div class="panel-body">
+                <div class="container">
+                <!-- Example row of columns -->
+                <section class="row text-center placeholders">
+				<div class="category"><strong>Name of Recipe</strong></div>
+				<div class="subText"> Created by xxxx-xxxx USER</div>
+				<hr>
+				<div class="userImg"><img src="public/assets/img/chicken.jpg" alt="food image" height="175px"></div>
+				<div class="category"> <strong>Cook Time </strong></div>
+				<div class="subText"> time </div>
+
+				<hr>
+				<div class="category"><strong> Ingredients </strong></div>
+				<div class="subText"> Ingredient List</div>
+				<hr>
+				<div class="category"><strong> Instructions</strong> </div>
+				<div class="subText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique sed ex nec fermentum. Aliquam interdum efficitur elit non aliquam. Curabitur dignissim cursus elit, sit amet lobortis metus. Nunc in justo et lectus tempus malesuada et at nunc. Suspendisse non odio maximus, vestibulum turpis volutpat, posuere nulla. Phasellus fringilla purus lobortis est sodales, non tincidunt diam pharetra. Cras porta mi libero, in facilisis ex aliquam et</div>
+                </section>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footerText"> <span class="text-muted "> &copy; Chef Chat, 2017</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>
