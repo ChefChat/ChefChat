@@ -101,6 +101,12 @@ h4 {
     padding: 5px;
 }
 
+.heartIcon {
+    float: right;
+    padding:2%;
+    margin-left: 1%;
+}
+
 .btn {
     background-color: #e13c14 !important;
     color:white;
