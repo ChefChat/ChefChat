@@ -168,6 +168,11 @@ h4 {
     text-align: left;
 }
 
+.recipeSubmit {
+    text-align: right;
+    margin-top:2%;
+}
+
 #ingredients {
     margin-bottom: 5%;
 }
