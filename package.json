@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ChefChat/ChefChat/issues"
   },
-  "homepage": "https://github.com/ChefChat/ChefChat#readme"
+  "homepage": "https://github.com/ChefChat/ChefChat#readme",
+  "dependencies": {
+    "react-anime": "^2.0.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.3"
+  }
 }

@@ -24,8 +24,8 @@
 <body>
     <!--Navigation Bar-->
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
+        <div class="container">            
+            <div class="navbar-header"> 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -34,15 +34,16 @@
                 </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left">
+            <div class="collapse navbar-collapse col-12" id="bs-example-navbar-collapse-1">             
+                <form class="navbar-form navbar-left col-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Username" required>
+                        <input type="text" class="form-control input-sm" placeholder="Username" required>
                     </div>
                     <button type="submit" class="btn btn-default">Sign In</button>
                 </form>
                 <!-- Logo -->
-                <div class="key"><img src="public/assets/img/logo.png" style="width:200px"></div>
+                <div class="container">
+                <div class="key"><img src="assets/img/logo.png" style="width:200px"></div> </div>
             </div>
     </nav>
     <!--Jumbotron-->
@@ -62,33 +63,33 @@
     <div class="container menu">
         <div class="panel panel-default ">
             <div class="panel-heading header">
-                <h3 class="panel-title"><img src="/assets/img/spoon.png" width="30px"> RECIPES </h3>
+                <h3 class="panel-title"><img src="assets/img/spoon.png" width="30px"> RECIPES </h3>
             </div>
             <div class="panel-body">
-                <!-- Example row of columns -->
-                <section class="row text-center placeholders">
-                    <div class="col-6 col-sm-4 placeholder menuItem">
-                        <img src="assets/img/chicken.jpg" alt="food image" height="175px">
+                <!-- Images of recipes-->
+                <section class="row text-center">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="assets/img/chicken.jpg" alt="food image">
                         <h4>Lemon Pepper Chicken</h4>
                     </div>
-                    <div class="col-6 col-sm-4 placeholder menuItem">
-                        <img src="assets/img/burritos.jpg" height="175px" alt="food image">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="assets/img/burritos.jpg" alt="food image">
                         <h4>Burrito Con Queso</h4>
                     </div>
-                    <div class="col-6 col-sm-4 placeholder menuItem">
-                        <img src="assets/img/stirfry.jpg" height="175px" alt="food image">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="assets/img/stirfry.jpg" alt="food image">
                         <h4>Southwester Stir Fry</h4>
                     </div>
-                    <div class="col-6 col-sm-4 placeholder menuItem">
-                        <img src="assets/img/burgers.jpg" alt="food image" height="175px">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="assets/img/burgers.jpg" alt="food image">
                         <h4>Big Belly Burger</h4>
                     </div>
-                    <div class="col-6 col-sm-4 placeholder menuItem">
-                        <img src="assets/img/noodles.jpg" height="175px" alt="food image">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="assets/img/noodles.jpg" alt="food image">
                         <h4>Chili Topped Noodles</h4>
                     </div>
-                    <div class="col-6 col-sm-4 placeholder menuItem">
-                        <img src="assets/img/pancakes.jpg" height="175px" alt="food image">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="assets/img/pancakes.jpg" alt="food image">
                         <h4>Pancakes</h4>
                     </div>
                 </section>

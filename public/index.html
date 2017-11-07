@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Native CSS-->  
- <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
@@ -25,8 +25,8 @@
 
 <!--Navigation Bar-->	
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
+        <div class="container">            
+            <div class="navbar-header"> 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -35,32 +35,33 @@
                 </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left">
+            <div class="collapse navbar-collapse col-12" id="bs-example-navbar-collapse-1">             
+                <form class="navbar-form navbar-left col-6">
                     <div class="form-group">
                         <input type="text" class="form-control input-sm" placeholder="Username" required>
                     </div>
                     <button type="submit" class="btn btn-default">Sign In</button>
                 </form>
                 <!-- Logo -->
-                <div class="key"><img src="assets/img/logo.png" style="width:200px"></div>
+                <div class="container">
+                <div class="key"><img src="assets/img/logo.png" style="width:200px"></div> </div>
             </div>
+        </div>    
     </nav>
 
 
 <!--Jumbotron-->
-      <div class="jumbotron">
-         
-          <div class="container innerBox"> 
-<div class="border">
-        <h1 class="display-3">FIND A RECIPE</h1>
-        <form class="form-inline">
-  <label class="sr-only" for="inlineFormInput">Name</label> 
-  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder= "Enter Recipe Name" required >
-  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Submit</button>
-</form>
-</div>
-      </div>
+ <div class="jumbotron">
+    <div class="container innerBox">
+        <div class="border">
+            <h1 class="display-3">FIND A RECIPE</h1>
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Enter Recipe Name" required>
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Submit</button>
+            </form>
+        </div>
+    </div>
 </div>   
 
  <!--Panel row one-->  
@@ -71,17 +72,17 @@
         </div>
 <div class="panel-body">
     <!-- Example row of columns -->
-    <section class="row text-center placeholders">
-        <div class="col-6 col-sm-4 placeholder menuItem">
-            <img src="assets/img/chicken.jpg" alt="food image" height="175px">
+    <section class="row text-center">
+        <div class="col-6 col-sm-4">
+            <img class="menuItem" src="assets/img/chicken.jpg" alt="food image">
             <h4>Lemon Pepper Chicken</h4>
         </div>
-        <div class="col-6 col-sm-4 placeholder menuItem">
-            <img src="assets/img/burritos.jpg" height="175px" alt="food image">
+        <div class="col-6 col-sm-4">
+            <img class="menuItem" src="assets/img/burritos.jpg"  alt="food image">
             <h4>Burrito Con Queso</h4>
         </div>
-        <div class="col-6 col-sm-4 placeholder menuItem">
-            <img src="assets/img/stirfry.jpg" height="175px" alt="food image">
+        <div class="col-6 col-sm-4">
+            <img class="menuItem" src="assets/img/stirfry.jpg" alt="food image">
             <h4>Southwester Stir Fry</h4>
         </div>
     </section>
@@ -93,17 +94,17 @@
  <div class="container menu">   
 <div class="panel-body">
     <!-- Example row of columns -->
-    <section class="row text-center placeholders">
-        <div class="col-6 col-sm-4 placeholder iconStyle">
-            <img src="assets/img/icon1.png" alt="food image" height="175px">
+    <section class="row text-center">
+        <div class="col-6 col-sm-4">
+            <img class="iconStyle" src="assets/img/icon1.png" alt="food image" height="175px">
             <h4>CREATE NEW RECIPE</h4>
         </div>
-        <div class="col-6 col-sm-4 placeholder iconStyle">
-            <img src="assets/img/icon2.png" height="175px" alt="food image">
+        <div class="col-6 col-sm-4">
+            <img class="iconStyle" src="assets/img/icon2.png" height="175px" alt="food image">
             <h4>YOUR RECIPES</h4>
         </div>
-        <div class="col-6 col-sm-4 placeholder iconStyle">
-            <img src="assets/img/icon3.png" height="175px" alt="food image">
+        <div class="col-6 col-sm-4">
+            <img class="iconStyle" src="assets/img/icon3.png" height="175px" alt="food image">
             <h4>FAVORITE RECIPES</h4>
         </div>
     </section>
@@ -116,5 +117,5 @@
         </div>
     </footer>
 </body>
-
+<script type=scr
 </html>
