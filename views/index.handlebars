@@ -1,0 +1,151 @@
+{{> homeNav}}
+
+<div class="jumbotron">
+    <div class="container innerBox">
+        <div class="border">
+<div class="container">
+
+<div class="row">
+ 
+  <h1 class="display-3">A place for home chefs to save <br>and organize their recipes</h1>
+  <br>
+
+  <p><button type="button" class="btn btn-default btn-lg btn-info" data-toggle="modal" data-target="#signUpModal">Get started now!</button></p>
+  <br>
+ </div>
+  </div>
+   </div>
+    </div>
+     </div>
+
+  <div class="container">
+  <div class="row">  
+  <p><h5>Passionate about cooking, but challenged with organizing all those recipes? Instead of fumbling with lots of paper or paying big bucks for fancy software, try our website for free! (That's about how much you've budgeted for logging your recipes, right?) Create an account, save your recipes, and come back anytime to find all your recipes in one place. </h5></p><br><br>
+  </div>  
+</div>
+
+<!--Panel row one-->
+    <div class="container menu">
+        <div class="panel panel-default ">
+            <div class="panel-heading header">
+                <h3 class="panel-title"><img src="images/spoon.png" width="30px"> RECIPES </h3>
+            </div>
+            <div class="panel-body">
+                <!-- Images of recipes-->
+                <section class="row text-center">
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="images/chicken.jpg" alt="food image">
+                        <h4>Lemon Pepper Chicken</h4>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="images/burritos.jpg" alt="food image">
+                        <h4>Burrito Con Queso</h4>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="images/stirfry.jpg" alt="food image">
+                        <h4>Southwester Stir Fry</h4>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="images/burgers.jpg" alt="food image">
+                        <h4>Big Belly Burger</h4>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="images/noodles.jpg" alt="food image">
+                        <h4>Chili Topped Noodles</h4>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <img class="menuItem" src="images/pancakes.jpg" alt="food image">
+                        <h4>Pancakes</h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+  <!-- SIGN UP MODAL -->
+  <div id="signUpModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Sign up modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">SIGN UP FOR FREE!</h4></center>
+      </div>
+
+      <div class="modal-body">
+
+        <h5><p>Use the form below to sign up for Chef Chat.</p></h5>
+
+        <form class="signUp form-horizontal">
+          <div class="form-group">
+          <label for="signUpName" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="signUpName" class="form-control" id="signUpName" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signUpEmail" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="signUpEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signUpPassword" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+          </div>
+        </div>
+      </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-create btn btn-default">Create my account</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nevermind</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Login modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">CHEF CHAT USER LOGIN</h4></center>
+      </div>
+
+      <div class="modal-body">
+
+       <h5><p>Use the form below to log in to Chef Chat using the email address and password associated with your account.</p><h5>
+
+        <form class="login form-horizontal">
+        <div class="form-group">
+          <label for="loginEmail" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+          </div>
+        </div>
+      </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-login btn btn-default">Log me in</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</div>

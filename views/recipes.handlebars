@@ -1,0 +1,152 @@
+{{> recipesNav }}
+
+<div class="container" id="recipesContainer" data-uid="{{user.id}}">
+
+  <div class="panel-heading header">
+    <h3 class="panel-title"><img src="images/spoon.png" width="30px"> MY RECIPES </h3>
+     </div>
+     
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6"><br><br>
+    <p>
+      <button type="button" class="btn btn-default btn-lg btn-info" data-toggle="modal" data-target="#addrecipeModal" onclick="console.log('hi');">Add a new recipe</button>
+      <button type="button" class="btn btn-default btn-lg btn-info btn-stats" data-toggle="modal" data-target="#userStatsModal">View my recipe stats</button>
+    </p><br>
+    
+    
+    
+    
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" id="recipesDisplay"></div>
+    <div class="col-md-2"></div>
+  </div>
+
+</div>
+
+  <!-- ADD RECIPE MODAL -->
+  <div id="addrecipeModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Add recipe modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">ADD A NEW RECIPE</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <h5><p>Use the form below to add a new recipe.</p></h5>
+
+      <form class="form-horizontal" id="recipesDisplayForm">
+        <div class="form-group">
+          <label for="recipeName" class="col-sm-3 control-label">Recipe Name</label>
+          <div class="col-sm-9">
+            <input type="name" class="form-control" id="recipeName" placeholder="Lemon Pepper Chicken">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="recipeType" class="col-sm-3 control-label">Category</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="recipeType">
+              <option>Appetizers</option>
+              <option>Breakfast</option>
+              <option>Holidays</option>
+              <option>Lunch</option>
+              <option>Dinner</option>
+              <option>Desserts</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="servingSize" class="col-sm-3 control-label">Servings</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" rows="1" placeholder="Enter number of servings" id="servingSize"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cookTime" class="col-sm-3 control-label">Cook Time</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" rows="1" placeholder="Enter cook time in minutes" id="cookTime"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ingredients" class="col-sm-3 control-label">Ingredients</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" rows="5" placeholder="Enter ingredients here" id="ingredients"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="recipeDirections" class="col-sm-3 control-label">Directions</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" rows="5" placeholder="Enter instructions for recipe" id="recipeDirections"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="recipeNotes" class="col-sm-3 control-label">Recipe Notes</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" rows="3" placeholder="This is an optional space for additional notes you'd like to save." id="recipeNotes"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="recipeRating" class="col-sm-3 control-label">Recipe Rating</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="recipeRating">
+              <option>10</option>
+              <option>9</option>
+              <option>8</option>
+              <option>7</option>
+              <option>6</option>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button value="Submit" class="btn btn-default" id="addrecipe">Add my recipe</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      </form>
+    </div>
+
+  </div>
+  </div>
+
+    <!-- USER STATS MODAL -->
+  <div id="userStatsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Add recipe modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">YOUR RECIPE STATS</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <h5><p>Here's some interesting data on your recipe history!</p></h5>
+
+        <canvas id="myChart" width="150" height="150"></canvas>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
