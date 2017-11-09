@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ChefChat/ChefChat#readme",
   "dependencies": {
+    "cleave.js": "^1.0.5",
     "react-anime": "^2.0.1"
   },
   "devDependencies": {
