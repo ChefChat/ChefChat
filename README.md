@@ -1,4 +1,4 @@
-#Welcome to Chef Chat - a place for chefs to organize their recipes.
+# Welcome to Chef Chat - a place for chefs to organize their recipes.
 This application is the premier place to research, create, and save your own personal recipes. For this application we created a unique UI to create a visually clean way to interact with user created data.
 
 ### Technology utilize-
